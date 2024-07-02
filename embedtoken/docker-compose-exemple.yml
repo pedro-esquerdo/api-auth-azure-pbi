@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  api:
+    build: 
+      context: .
+      target: production
+    environment:
+      - MICROSOFT_CLIENT_ID=
+      - MICROSOFT_TENANT_ID=
+      - MICROSOFT_REPORT_ID=
+      - MICROSOFT_USERNAME=
+      - MICROSOFT_PASSWORD=
+      - CASPIO_CLIENT_ID=
+      - CASPIO_CLIENT_SECRET=
+    ports:
+      - 8080:8080
